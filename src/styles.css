@@ -28,7 +28,7 @@ header .logo a {
     font-weight: bold;
 }
 
-header nav ul {
+/* header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,7 +53,35 @@ header nav ul li a.button {
 
 header nav ul li a.button:hover {
     background: #e65c00;
+} */
+
+/* CSS styles */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end of the container */
+    align-items: center; /* Vertically centers items */
 }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    /* display: inline; */
+    text-decoration: none;
+}
+
+nav ul li {
+    color: #fff;
+    margin-right: 20px;
+}
+
+nav .button {
+    background: #ff6600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
 
 .hero {
     background: url('hero-background.jpg') no-repeat center center/cover;

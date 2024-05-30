@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Love Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles */
+        .optimize-your {
+            color: blue; /* Change to your desired color */
+        }
+
+        .resume-ats-hiring {
+            color: green; /* Change to your desired color */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff006a; /* Button background color */
+            color: #fff; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px; /* Add 3D effect */
+        }
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg); /* Flip the card */
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide back side of card */
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #555;
+            color: white;
+            transform: rotateY(180deg); /* Initially hide back side of card */
+        }
+        .some-class {
+    background-image: url('/images/back_image.png');
+}
+
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -14,17 +77,36 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Templates</a></li>
-                    <li><a href="#">Pricing</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="button">Login/Sign Up</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#" class="button">Get started</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <section class="resume-optimization">
+        <div class="container">
+            <h1><span class="optimize-your">Optimize Your</span><br/> <span class="resume-ats-hiring">Resume for ATS and Hiring Leads</span></h1>
+            <p>Get instant feedback with our free AI checker, scanning 20+ crucial areas,<br/> designed and moderated by top recruiters to boost your job search<br/> effectively.</p>
+            <a href="#" class="button">Get Your Resume Score</a>
+        </div>
+    </section>
+
+    <!-- Flip Card -->
+    <div class="flip-card" style="float: right; margin-right: 20px;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="/images/front_image.png" alt="Front Image" style="width: 100%; height: 100%">
+                <!-- " alt="Front Image" style="width: 100%; height: 100%;"> -->
+            </div>       
+            <div class="flip-card-back">
+                <img src="/images/back_image.png" alt="Back Image" style="width: 100%; height: 100%">
+                <!-- " alt="Back Image" style="width: 100%; height: 100%;"> -->
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -50,7 +132,7 @@
                 <p>Choose from a variety of professionally designed resume templates that suit your industry and career level.</p>
             </div>
             <div class="feature">
-                <img src="icons/expert-guidance-icon.png" alt="Expert Guidance">
+                <img src="icons/expe rt-guidance-icon.png" alt="Expert Guidance">
                 <h3>Expert Guidance</h3>
                 <p>Get tips and advice from career experts to ensure your resume stands out to employers.</p>
             </div>
